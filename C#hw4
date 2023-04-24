@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+
+public class MyStack<T>
+{
+    private List<T> stack;
+
+    public MyStack()
+    {
+        stack = new List<T>();
+    }
+
+    public int Count
+    {
+        get { return stack.Count; }
+    }
+
+    public T Pop()
+    {
+        if (Count == 0)
+            throw new InvalidOperationException("Stack is empty");
+
+        T item = stack[Count - 1];
+        stack.RemoveAt(Count - 1);
+        return item;
+    }
+
+    public void Push(T item)
+    {
+        stack.Add(item);
+    }
+}
