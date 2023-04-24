@@ -1,3 +1,6 @@
+
+// Generics Q1
+
 using System;
 using System.Collections.Generic;
 
@@ -30,3 +33,6 @@ public class MyStack<T>
         stack.Add(item);
     }
 }
+
+
+// Generics Q2
