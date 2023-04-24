@@ -1,4 +1,25 @@
 
+Generics have several benefits:
+
+Reusability: Generic classes and methods can be reused with different types, reducing the need for redundant code.
+
+Type safety: Generics ensure type safety at compile-time by catching type errors before the code is executed.
+
+Performance: Generics improve performance by eliminating the need for boxing and unboxing, which can be expensive operations.
+
+
+using System.Collections.Generic;
+
+List stringList = new List();
+
+
+The Dictionary class, which is a collection type that represents a collection of key/value pairs, has two generic type parameters: TKey and TValue.
+
+
+The commonly used methods to add items to lists are:Add(item): Adds an item to the end of the list. Insert(index, item): Inserts an item at a specified index in the list.
+
+
+
 // Generics Q1
 
 using System;
